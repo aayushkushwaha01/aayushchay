@@ -28,7 +28,8 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "https://aayushchay-qeij.vercel.app/login",
+    origin: ["https://aayushchay-qeij.vercel.app/login"],
+    methods: ["POST" , "GET"],
     credentials: true,
   },
 });
