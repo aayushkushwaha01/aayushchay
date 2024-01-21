@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect('mongodb+srv://aayushkushwaha78:<AYbPcgHY6yEwRJF1>@cluster0.fi7qpzl.mongodb.net/chatapp?retryWrites=true&w=majority')
+  .connect('mongodb+srv://aayushkushwaha78:AYbPcgHY6yEwRJF1@cluster0.fi7qpzl.mongodb.net/chatapp?retryWrites=true&w=majority')
   .then(() => {
     console.log("DB Connetion Successfull");
   })
